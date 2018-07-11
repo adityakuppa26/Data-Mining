@@ -6,7 +6,6 @@ This process takes place after the data warehousing process, as it requires comp
   
 # Knowledge Discovery in Databases (KDD)
   
-**Steps**
   
 * <b>Data Cleaning</b>: Data cleaning step eliminates the inconsistencies and aberrations from the data. It standardizes and makes the data useable. Removal of noise or outliers. Collecting necessary information to model or account for noise.  
 Strategies for handling missing data fields.  
