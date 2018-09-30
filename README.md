@@ -35,6 +35,6 @@ The main advantages of star schemas are:
 3.	Are widely supported by a large number of business intelligence tools, which may anticipate or even require that the data-warehouse schema contain dimension tables.  
   
 Star schemas are used for both simple data marts and very large data warehouse  
-![star.PNG]("star schema")
+![star.PNG](star_schema)
 
   
