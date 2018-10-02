@@ -37,5 +37,13 @@ The main advantages of star schemas are:
 Star schemas are used for both simple data marts and very large data warehouse  
   
 ![star_schema](star.PNG)
+  
+# Snowflake Schema
+  
+The snowflake schema is an extension of the star schema, where each point of the star explodes into more points. In a star schema, each dimension is represented by a single dimensional table, whereas in a snowflake schema, that dimensional table is normalized into multiple lookup tables, each representing a level in the dimensional hierarchy.  
+The main advantage of the snowflake schema is the improvement in query performance due to minimized disk storage requirements and joining smaller lookup tables. The main disadvantage of the snowflake schema is the additional maintenance efforts needed due to the increase number of lookup tables.  
+  
+![snow flake](snowflake.PNG)
+
 
   
