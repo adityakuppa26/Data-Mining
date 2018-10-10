@@ -43,7 +43,25 @@ Star schemas are used for both simple data marts and very large data warehouse
 The snowflake schema is an extension of the star schema, where each point of the star explodes into more points. In a star schema, each dimension is represented by a single dimensional table, whereas in a snowflake schema, that dimensional table is normalized into multiple lookup tables, each representing a level in the dimensional hierarchy.  
 The main advantage of the snowflake schema is the improvement in query performance due to minimized disk storage requirements and joining smaller lookup tables. The main disadvantage of the snowflake schema is the additional maintenance efforts needed due to the increase number of lookup tables.  
   
-![snow flake](snowflake.PNG)
+![snow flake](snowflake.PNG)  
+  
+# OLAP Cube  
+  
+An OLAP cube is a term that typically refers to multi-dimensional array of data. OLAP is an acronym for online analytical processing, which is a computer-based technique of analyzing data to look for insights. The term cube here refers to a multi-dimensional dataset, which is also sometimes called a hypercube if the number of dimensions is greater than 3.  
+  
+Operations:  
+  
+1.	Slice is the act of picking a rectangular subset of a cube by choosing a single value for one of its dimensions, creating a new cube with one fewer dimension.  
+  
+2.	Dice: The dice operation produces a subcube by allowing the analyst to pick specific values of multiple dimensions.  
+  
+3.	Drill Down/Up allows the user to navigate among levels of data ranging from the most summarized (up) to the most detailed (down).  
+  
+4. Roll-up: A roll-up involves summarizing the data along a dimension. The summarization rule might be computing totals along a hierarchy or applying a set of formulas such as profit = sales – expenses.  
+  
+5. Pivot: allows an analyst to rotate the cube in space to see its various faces.  
+  
+
 
 
   
