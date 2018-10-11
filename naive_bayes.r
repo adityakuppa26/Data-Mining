@@ -1,21 +1,14 @@
-library(e1071)
+install.packages("e1071")
+library("e1071")
 
-library(rjson)
-
-#Load Data
-
-
-input.dat <- fromJSON(file = "credit-g.json")
+iris_data <- datasets::iris
+bayes <- naiveBayes(Species ~ . , data= iris_data )
+print (bayes)
 
 
-#Train the Model
 
-model <- naiveBayes(BUYS_COMPUTER ~ AGE + INCOME + STUDENT +
 
-CREDIT_RATING, data = input.dat)
 
-#Predict using that model
-
-input.dat[1,]
-
-predict(model, input.dat[1,-5])
+computer <- read.csv("computer.csv",sep = ",",header = TRUE)
+naive <- naiveBayes(BUYS_COMPUTER ~ . , data = computer)
+print (naive)
