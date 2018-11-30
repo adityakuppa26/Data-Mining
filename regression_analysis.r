@@ -12,7 +12,7 @@ relation <- lm(w~h)
 
 
 
-plot(h,w,col="blue",main="h vs w",abline(lm(relation)),xlab="weight",ylab="height")
+plot(h,w,col="blue",main="h vs w",abline((relation)),xlab="weight",ylab="height")
 
 
 
