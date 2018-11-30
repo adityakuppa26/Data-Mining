@@ -8,7 +8,7 @@ struct location
 
   char street[30];
 
-  char c_key[30];
+  int c_key;
 
 }l[10];
 
